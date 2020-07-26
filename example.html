@@ -1,0 +1,14 @@
+<script type="text/javascript" src="dist/zstd.js"></script>
+<script>
+	let zstd;
+	ZSTD().then(instance => {
+		zstd = instance;
+		test();
+	});
+
+	function test() {
+		let buffer = zstd.compressString("Hello World");
+		console.log(buffer);
+		console.log(zstd.decompressString(buffer.buffer));
+	}
+</script>
