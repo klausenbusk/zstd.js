@@ -15,7 +15,7 @@ const zstd = await ZSTD();
 
 zstd.compress(<Uint8Array>, <compressionLevel>) <Uint8Array>
 zstd.decompress(<Uint8Array>) <Uint8Array>
-zstd.compressString(<string>) <Uint8Array>
+zstd.compressString(<string>, <compressionLevel>) <Uint8Array>
 zstd.decompressString(<Uint8Array>) <string>
 ```
 See also: [example.html](./example.html)
